@@ -17,7 +17,7 @@ Quill is a free, [open source](https://github.com/quilljs/quill/) WYSIWYG editor
 ![image](https://user-images.githubusercontent.com/9497415/122029542-dbcf1d80-cdc4-11eb-9034-6a57d22daac8.png)
 
 ## Blazor Quill Component in action
-![](https://www.puresourcecode.com/wp-content/uploads/2021/06/BlazorQuillExample.gif)
+![BlazorQuillExample](https://user-images.githubusercontent.com/9497415/122078551-9591b280-cdf4-11eb-9c74-55816e08cfc9.gif)
 
 ## More documentation and examples
 For more documentation and examples about Blazor and other components, visit my blog [PureSourceCode](https://www.puresourcecode.com/). Here a quick list of popular links:
