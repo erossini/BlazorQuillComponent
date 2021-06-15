@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Authors>Enrico Rossini</Authors>
+    <Company>Enrico Rossini - PureSourceCode</Company>
+    <PackageIcon>avatar.jpeg</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/erossini/BlazorQuillComponent</RepositoryUrl>
+    <PackageTags>blazor, blazor-component, blazor-webassembly, blazor-server</PackageTags>
+    <Description>Blazor Quill Component is a custom reusable control that allows us to easily consume Quill and place multiple instances of it on a single page in our Blazor application.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://www.puresourcecode.com/</PackageProjectUrl>
   </PropertyGroup>
 
   
@@ -11,6 +21,17 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="wwwroot\avatar.jpeg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
