@@ -15,3 +15,6 @@ Also, it will allow us to implement the following features:
 Quill is a free, [open source](https://github.com/quilljs/quill/) WYSIWYG editor built for the modern web. With its [modular architecture](https://quilljs.com/docs/modules/) and expressive [API](https://quilljs.com/docs/api/), it is completely customizable to fit any need.
 
 ![image](https://user-images.githubusercontent.com/9497415/122029542-dbcf1d80-cdc4-11eb-9034-6a57d22daac8.png)
+
+## More documentation and examples
+For more documentation and examples about Blazor and other components, visit my blog [PureSourceCode](https://www.puresourcecode.com/)
