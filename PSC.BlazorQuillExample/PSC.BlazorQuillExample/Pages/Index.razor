@@ -170,9 +170,18 @@
 </div>
 
 @code {
+	// Quill editor
 	QuillEditor QuillHtml;
-
 	string QuillHTMLContent;
+
+	// use Quill native
+	QuillEditor QuillNative;
+	string QuillContent;
+
+	// Quill editor read-only with the option to enable an online editor
+	QuillEditor QuillReadOnly;
+	string QuillReadOnlyContent = @"<span><b>Read Only</b> <u>Content</u></span>";
+	bool mode = false;
 
 	public async void GetHTML()
 	{
@@ -180,25 +189,17 @@
 		StateHasChanged();
 	}
 
-	QuillEditor QuillNative;
-	string QuillContent;
-
 	public async void GetContent()
 	{
 		QuillContent = await this.QuillNative.GetContent();
 		StateHasChanged();
 	}
+
 	public async void LoadContent()
 	{
 		await this.QuillNative.LoadContent(QuillContent);
 		StateHasChanged();
 	}
-
-	QuillEditor QuillReadOnly;
-
-	string QuillReadOnlyContent = @"<span><b>Read Only</b> <u>Content</u></span>";
-
-	bool mode = false;
 
 	async Task ToggleQuillEditor()
 	{
