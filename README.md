@@ -1,1 +1,1 @@
-# BlazorQuillComponent
+# Blazor Quill Component
