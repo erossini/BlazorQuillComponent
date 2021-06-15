@@ -14,6 +14,7 @@ namespace PSC.Blazor.Components.Quill
 		private const string strGetContent = "QuillFunctions.getQuillContent";
 		private const string strLoadQuillContent = "QuillFunctions.loadQuillContent";
 		private const string strEnableQuillEditor = "QuillFunctions.enableQuillEditor";
+		private const string strInsertImage = "QuillFunctions.insertQuillImage";
 
 		#endregion Constants
 
@@ -120,6 +121,16 @@ namespace PSC.Blazor.Components.Quill
 			return jsRuntime.InvokeAsync<object>(
 				strEnableQuillEditor,
 				quillElement, mode);
+		}
+
+		internal static ValueTask<object> InsertQuillImage(
+			IJSRuntime jsRuntime,
+			ElementReference quillElement,
+			string imageURL)
+		{
+			return jsRuntime.InvokeAsync<object>(
+				strInsertImage,
+				quillElement, imageURL);
 		}
 	}
 }

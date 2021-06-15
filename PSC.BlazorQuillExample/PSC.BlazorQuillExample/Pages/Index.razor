@@ -114,6 +114,10 @@
 				@onclick="LoadContent">
 			Load Content
 		</button>
+		@*<button class="btn btn-primary"
+				@onclick="InsertImage">
+			Insert Image
+		</button>*@
 		<div>
 			@QuillContent
 		</div>
@@ -206,4 +210,10 @@
 		mode = !mode;
 		await this.QuillReadOnly.EnableEditor(mode);
 	}
+
+    public async void InsertImage()
+    {
+        await this.QuillNative.InsertImage("yourimageshere");
+        StateHasChanged();
+    }
 }
